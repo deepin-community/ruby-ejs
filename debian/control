@@ -1,0 +1,27 @@
+Source: ruby-ejs
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Balasankar C <balasankarc@autistici.org>
+Build-Depends: debhelper (>= 9~),
+               gem2deb,
+               rake,
+               ruby-execjs
+Standards-Version: 3.9.7
+Vcs-Git: https://anonscm.debian.org/git/pkg-ruby-extras/ruby-ejs.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-ejs.git
+Homepage: https://github.com/sstephenson/ruby-ejs/
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-ejs
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: EJS (Embedded JavaScript) template compiler
+ Compile and evaluate EJS (Embedded JavaScript) templates from Ruby.
+ EJS templates embed JavaScript code inside <% ... %> tags, much
+ like ERB. This library is a port of Underscore.js's _.template
+ function to Ruby, and strives to maintain the same syntax and semantics.

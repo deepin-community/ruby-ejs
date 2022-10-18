@@ -1,0 +1,20 @@
+ruby-ejs (1.1.1-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Balasankar C ]
+  * Better DebCI integration
+
+  [ Cédric Boutillier ]
+  * Bump debhelper compatibility level to 9
+  * Use https:// in Vcs-* fields
+  * Bump Standards-Version to 3.9.7 (no changes needed)
+  * Run wrap-and-sort on packaging files
+
+ -- Christian Hofstaedtler <zeha@debian.org>  Sat, 05 Mar 2016 03:15:51 +0100
+
+ruby-ejs (1.1.1-1) unstable; urgency=medium
+
+  * Initial release (Closes: #766666)
+
+ -- Balasankar C <balasankarc@autistici.org>  Fri, 24 Oct 2014 18:11:56 +0530
